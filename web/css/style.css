@@ -1,3 +1,31 @@
+html {
+    background-color: white;
+    background-image:
+            url(../img/bee.png);
+    background-position:
+            0 20%;
+    background-size:
+            20%;
+    animation: 160s para infinite linear;
+}
+
+@keyframes para {
+    100% {
+        background-position:
+                5000px 20%;
+    }
+}
+
+footer.page-footer {
+    padding-top: inherit;
+}
+
 body {
-    color: red;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
 }
