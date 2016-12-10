@@ -1,22 +1,18 @@
-
-footer.page-footer {
-    padding-top: inherit;
-}
-
-
+/* body calibration */
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
 }
 
+/* main box between header and footer, for flexbox */
 main {
     flex: 1 0 auto;
 }
 
 
 /* Twinkle stars in the background */
-.stars, .twinkling, .bg {
+.stars, .twinkling, .nebula {
     position:absolute;
     top:0;
     left:0;
@@ -27,7 +23,6 @@ main {
     display:block;
     z-index: -1;
 }
-
 
 .stars { /* the dots of the stars */
     background:#000 url(../img/stars.png) repeat top center;
@@ -44,9 +39,14 @@ main {
     to {background-position:-10000px 5000px;}
 }
 
-.bg { /* if you want to put a background behind all of that you need to place it right here */
+.nebula { /* if you want to put a background behind all of that you need to place it right here */
     background: url(../img/espace.jpg) no-repeat center center fixed;
     background-size: cover;
     opacity: 0.6;
 }
 
+/* footer */
+footer.page-footer {
+    padding-top: inherit;
+    background-color: blue;
+}
