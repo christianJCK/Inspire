@@ -1,3 +1,8 @@
+/* font downloaded and added to the "fonts" folder to be able to call them anytime anywhere */
+@font-face {
+    font-family: Earth; src: url(../fonts/earthorbiter.ttf);
+}
+
 /* body calibration */
 body {
     display: flex;
@@ -40,13 +45,17 @@ main {
 }
 
 .nebula { /* if you want to put a background behind all of that you need to place it right here */
-    background: url(../img/espace.jpg) no-repeat center center fixed;
+    background: url(../img/space.jpg) no-repeat center center fixed;
     background-size: cover;
-    opacity: 0.6;
+    opacity: 0.4;
 }
 
 /* footer */
+
 footer.page-footer {
     padding-top: inherit;
-    background-color: blue;
+    font-family: Earth, serif;
 }
+
+
+
