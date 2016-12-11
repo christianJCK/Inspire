@@ -6,10 +6,15 @@
 
 /* header calibration */
 
+#icons ul li a {
+    color: darkgrey;
+    transition: all 0.3s ease;
+    margin: 3px 0 15px 0;
+}
 
-
-i.icons {
-    color: red;
+#icons ul li a:hover {
+    color: mediumslateblue;
+    cursor: hand;
 }
 
 /* body calibration */
