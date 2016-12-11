@@ -14,20 +14,14 @@
     </head>
     <body>
 
-        <header>
-            <a href="https://twitter.com/sushi4000" target="_blank"><i class="small material-icons social-media socicon-twitter"></i></a>
-            <a href="https://github.com/christianJCK" target="_blank"><i class="small material-icons social-media socicon-github"></i></a>
-            <a href="https://www.linkedin.com/in/christianjecko" target="_blank"><i class="small material-icons social-media socicon-linkedin"></i></a>
-        </header>
+    {% include ':Template:header.html.twig' %}
 
         <main>
-
             <div id="twinkling background">
                 <div class="stars"></div>
                 <div class="twinkling"></div>
                 <div class="nebula"></div>
             </div>
-
             {% block body %}{% endblock %}
         </main>
 

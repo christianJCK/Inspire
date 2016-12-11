@@ -4,12 +4,27 @@
     src: url(../fonts/earthorbitertitle.ttf);
 }
 
+/* header calibration */
+
+
+
+i.icons {
+    color: red;
+}
+
 /* body calibration */
 
 body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+}
+
+h1 {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 2px #0088CC;
+    font-family: Earth, serif;
 }
 
 /* main box between header and footer, for flexbox */
