@@ -1,3 +1,73 @@
-body {
-    color: red;
+/* font downloaded and added to the "fonts" folder to be able to call them anytime anywhere */
+@font-face {
+    font-family: Earth;
+    src: url(../fonts/earthorbitertitle.ttf);
 }
+
+/* body calibration */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+/* main box between header and footer, for flexbox */
+main {
+    flex: 1 0 auto;
+}
+
+
+/* Twinkle stars in the background */
+
+.stars, .twinkling, .nebula {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index: -1;
+}
+
+.stars { /* the dots of the stars */
+    background:#000 url(../img/stars.png) repeat top center;
+}
+
+
+.twinkling{ /* the twinkling pattern that goes on the dots creating the illusion */
+    background:transparent url(../img/twinkling.png) repeat top center;
+    animation:move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back { /* the frames that moves from one position to another related to twinkling */
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.nebula { /* if you want to put a background behind all of that you need to place it right here */
+    background: url(../img/space.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+/* footer */
+
+footer.page-footer {
+    padding-top: inherit;
+    font-family: Earth, serif;
+}
+
+footer.page-footer .about { /* "About" attribute before hovering */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+footer.page-footer .about:hover { /* "About" attribute after hovering */
+    color: mediumslateblue;
+    cursor: hand;
+}
+
+
