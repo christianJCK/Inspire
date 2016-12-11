@@ -1,9 +1,11 @@
 /* font downloaded and added to the "fonts" folder to be able to call them anytime anywhere */
 @font-face {
-    font-family: Earth; src: url(../fonts/earthorbiter.ttf);
+    font-family: Earth;
+    src: url(../fonts/earthorbitertitle.ttf);
 }
 
 /* body calibration */
+
 body {
     display: flex;
     min-height: 100vh;
@@ -17,6 +19,7 @@ main {
 
 
 /* Twinkle stars in the background */
+
 .stars, .twinkling, .nebula {
     position:absolute;
     top:0;
@@ -57,5 +60,14 @@ footer.page-footer {
     font-family: Earth, serif;
 }
 
+footer.page-footer .about { /* "About" attribute before hovering */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+footer.page-footer .about:hover { /* "About" attribute after hovering */
+    color: mediumslateblue;
+    cursor: hand;
+}
 
 

@@ -1,0 +1,4 @@
+p:hover {
+    color: mediumslateblue;
+    transition: 0.5s ease-in-out;
+}
