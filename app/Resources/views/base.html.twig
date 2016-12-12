@@ -5,25 +5,23 @@
         <title>{% block title %}Inspire!{% endblock %}</title>
 
         <!-- style blocks with framework first. Cascade style legacy, first one, then second one takes role, then third one, etc.. -->
+        <link href="https://file.myfontastic.com/n6vo44Re5QaWo8oCKShBs7/icons.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
         <link href="http://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="{{ asset('css/style.css') }}">
         {% block stylesheets %}{% endblock %}
         <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
     </head>
     <body>
 
-        <header>
-        </header>
+    {% include ':Template:header.html.twig' %}
 
         <main>
-
             <div id="twinkling background">
                 <div class="stars"></div>
                 <div class="twinkling"></div>
                 <div class="nebula"></div>
             </div>
-
             {% block body %}{% endblock %}
         </main>
 
