@@ -4,16 +4,31 @@
     src: url(../fonts/earthorbitertitle.ttf);
 }
 
-/* header calibration */
+/* Header attributes and calibration */
 
-#icons ul li a {
+#icons ul li a { /* change the base color of all icons */
     color: darkgrey;
     transition: all 0.3s ease;
     margin: 3px 0 15px 0;
 }
 
-#icons ul li a:hover {
+#icons li .socicon-twitter:hover {
+    color: #5eb5e0;
+    cursor: hand;
+}
+
+#icons li .socicon-github:hover {
     color: mediumslateblue;
+    cursor: hand;
+}
+
+#icons li .socicon-linkedin:hover {
+    color: #ffffff;
+    cursor: hand;
+}
+
+#icons li .socicon-deviantart:hover {
+    color: greenyellow;
     cursor: hand;
 }
 
