@@ -1,4 +1,5 @@
 /* font downloaded and added to the "fonts" folder to be able to call them anytime anywhere */
+
 @font-face {
     font-family: Earth;
     src: url(../fonts/earthorbitertitle.ttf);
@@ -48,12 +49,13 @@ h1 {
 }
 
 /* main box between header and footer, for flexbox */
+
 main {
     flex: 1 0 auto;
 }
 
 
-/* Twinkle stars in the background */
+/* base background */
 
 .stars, .twinkling, .nebula {
     position:absolute;
@@ -90,7 +92,7 @@ main {
 
 /* footer */
 
-footer.page-footer {
+footer.page-footer { /* defining all attributes in general for the footer */
     padding-top: inherit;
     font-family: Earth, serif;
 }
