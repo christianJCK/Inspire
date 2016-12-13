@@ -1,0 +1,24 @@
+phrase_index:
+    path:     /
+    defaults: { _controller: "AppBundle:Phrase:index" }
+    methods:  GET
+
+phrase_show:
+    path:     /{id}/show
+    defaults: { _controller: "AppBundle:Phrase:show" }
+    methods:  GET
+
+phrase_new:
+    path:     /new
+    defaults: { _controller: "AppBundle:Phrase:new" }
+    methods:  [GET, POST]
+
+phrase_edit:
+    path:     /{id}/edit
+    defaults: { _controller: "AppBundle:Phrase:edit" }
+    methods:  [GET, POST]
+
+phrase_delete:
+    path:     /{id}/delete
+    defaults: { _controller: "AppBundle:Phrase:delete" }
+    methods:  DELETE

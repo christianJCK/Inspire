@@ -7,30 +7,27 @@
 
 /* Header attributes and calibration */
 
-#icons ul li a { /* change the base color of all icons */
+#icons i { /* change the base color of all icons */
     color: darkgrey;
     transition: all 0.3s ease;
     margin: 3px 0 15px 0;
+    cursor: hand;
 }
 
-#icons li .socicon-twitter:hover {
+#icons a .socicon-twitter:hover {
     color: #5eb5e0;
-    cursor: hand;
 }
 
-#icons li .socicon-github:hover {
+#icons a .socicon-github:hover {
     color: mediumslateblue;
-    cursor: hand;
 }
 
-#icons li .socicon-linkedin:hover {
+#icons a .socicon-linkedin:hover {
     color: #ffffff;
-    cursor: hand;
 }
 
-#icons li .socicon-deviantart:hover {
+#icons a .socicon-deviantart:hover {
     color: greenyellow;
-    cursor: hand;
 }
 
 /* body calibration */
@@ -39,6 +36,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    color: white;
 }
 
 h1 {

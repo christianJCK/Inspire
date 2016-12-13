@@ -1,0 +1,41 @@
+{% extends 'base.html.twig' %}
+
+{% block body %}
+    <h1>Phrases list</h1>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Id</th>
+                <th>Name</th>
+                <th>Comment</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+        {% for phrase in phrases %}
+            <tr>
+                <td><a href="{{ path('phrase_show', { 'id': phrase.id }) }}">{{ phrase.id }}</a></td>
+                <td>{{ phrase.name }}</td>
+                <td>{{ phrase.comment }}</td>
+                <td>
+                    <ul>
+                        <li>
+                            <a href="{{ path('phrase_show', { 'id': phrase.id }) }}">show</a>
+                        </li>
+                        <li>
+                            <a href="{{ path('phrase_edit', { 'id': phrase.id }) }}">edit</a>
+                        </li>
+                    </ul>
+                </td>
+            </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+
+    <ul>
+        <li>
+            <a href="{{ path('phrase_new') }}">Create a new phrase</a>
+        </li>
+    </ul>
+{% endblock %}

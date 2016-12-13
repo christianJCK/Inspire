@@ -1,3 +1,7 @@
+app_phrase:
+    resource: "@AppBundle/Resources/config/routing/phrase.yml"
+    prefix:   /phrase
+
 app_homepage:
     path:     /
     defaults: { _controller: AppBundle:Inspire:index }
