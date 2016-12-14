@@ -1,0 +1,18 @@
+AppBundle\Entity\Phrase:
+    type: entity
+    table: null
+    repositoryClass: AppBundle\Repository\PhraseRepository
+    id:
+        id:
+            type: integer
+            id: true
+            generator:
+                strategy: AUTO
+    fields:
+        name:
+            type: string
+            length: '50'
+        comment:
+            type: string
+            length: 255
+    lifecycleCallbacks: {  }

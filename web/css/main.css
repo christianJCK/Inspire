@@ -1,0 +1,107 @@
+/* font downloaded and added to the "fonts" folder to be able to call them anytime anywhere */
+
+@font-face {
+    font-family: Earth;
+    src: url(../fonts/earthorbitertitle.ttf);
+}
+
+/* Header attributes and calibration */
+
+#icons i { /* change the base color of all icons */
+    color: darkgrey;
+    transition: all 0.3s ease;
+    margin: 3px 0 15px 0;
+    cursor: hand;
+}
+
+#icons a .socicon-twitter:hover { /* every a link into "i" will get the modifications */
+    color: #5eb5e0;
+}
+
+#icons a .socicon-github:hover {
+    color: mediumslateblue;
+}
+
+#icons a .socicon-linkedin:hover {
+    color: #ffffff;
+}
+
+#icons a .socicon-deviantart:hover {
+    color: greenyellow;
+}
+
+/* body calibration */
+
+body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+.title {
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 2px #0088CC;
+    font-family: Earth, serif;
+}
+
+/* main box between header and footer, for flexbox */
+
+main {
+    flex: 1 0 auto;
+}
+
+
+/* base background */
+
+.stars, .twinkling, .nebula {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    width:100%;
+    height:100%;
+    display:block;
+    z-index: -1;
+}
+
+.stars { /* the dots of the stars */
+    background:#000 url(../img/stars.png) repeat top center;
+}
+
+
+.twinkling{ /* the twinkling pattern that goes on the dots creating the illusion */
+    background:transparent url(../img/twinkling.png) repeat top center;
+    animation:move-twink-back 200s linear infinite;
+}
+
+@keyframes move-twink-back { /* the frames that moves from one position to another related to twinkling */
+    from {background-position:0 0;}
+    to {background-position:-10000px 5000px;}
+}
+
+.nebula { /* if you want to put a background behind all of that you need to place it right here */
+    background: url(../img/space.jpg) no-repeat center center fixed;
+    background-size: cover;
+    opacity: 0.4;
+}
+
+/* footer */
+
+footer.page-footer { /* defining all attributes in general for the footer */
+    padding-top: inherit;
+    font-family: Earth, serif;
+}
+
+footer.page-footer .about { /* "About" attribute before hovering */
+    color: white;
+    transition: all 0.3s ease;
+}
+
+footer.page-footer .about:hover { /* "About" attribute after hovering */
+    color: mediumslateblue;
+    cursor: hand;
+}
+
+
