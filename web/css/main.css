@@ -14,7 +14,7 @@
     cursor: hand;
 }
 
-#icons a .socicon-twitter:hover {
+#icons a .socicon-twitter:hover { /* every a link into "i" will get the modifications */
     color: #5eb5e0;
 }
 
@@ -36,10 +36,9 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    color: white;
 }
 
-h1 {
+.title {
     font-size: 30px;
     color: white;
     text-shadow: 0px 0px 2px #0088CC;
